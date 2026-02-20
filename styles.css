@@ -67,15 +67,43 @@ body {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.35rem;
-  color: var(--white);
+  display: flex;
+  align-items: center;
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
-.logo:hover {
-  color: var(--gold-light);
+.logo img {
+  display: block;
+  height: 42px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  transition: opacity var(--transition);
+}
+
+.logo:hover img {
+  opacity: 0.9;
+}
+
+/* Google Business button with logo */
+.btn-google {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-google .google-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-google .google-logo svg {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .nav-toggle {
@@ -109,12 +137,45 @@ body {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 0.5rem;
+}
+
+.btn-google-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  white-space: nowrap;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.btn-google-header:hover {
+  color: var(--gold-light);
+  border-color: var(--gold);
+  background: var(--gold-dim);
+}
+
+.btn-google-header .google-logo svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .nav-list a {
@@ -147,7 +208,7 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1510 50%, var(--bg-dark) 100%);
-  background-image: url("https://images.unsplash.com/photo-1521590832167-7abcbf20da19?w=1920&q=70");
+  background-image: url("2026-02-09.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.35;
@@ -487,8 +548,13 @@ body {
 }
 
 .service-icon {
-  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.service-icon i {
+  font-size: 2rem;
+  display: block;
 }
 
 .service-card h3 {
@@ -576,14 +642,14 @@ body {
   width: 64px;
   height: 64px;
   margin: 0 auto 1rem;
-  font-size: 2rem;
-  font-weight: 700;
   color: var(--gold);
-  background: var(--bg-dark);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.success-icon i {
+  font-size: 3rem;
 }
 
 .booking-success h3 {
@@ -675,6 +741,8 @@ body {
   }
 
   .nav {
+    flex-direction: column;
+    align-items: stretch;
     position: fixed;
     top: 4rem;
     right: 0;
@@ -697,6 +765,12 @@ body {
   .nav-list {
     flex-direction: column;
     gap: 0.25rem;
+  }
+
+  .btn-google-header {
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
   }
 
   .nav-list a {
