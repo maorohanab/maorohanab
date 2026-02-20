@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מאור אוחנה | עיצוב שיער ברחובות</title>
+  <meta name="description" content="מאור אוחנה – ספרות גברים מקצועית ברחובות. תספורות, עיצוב זקן, פן והחלקות. קביעת תור נוחה ושירות אישי.">
+  <meta name="keywords" content="עיצוב שיער, תספורת גברים, רחובות, מאור אוחנה, ספר גברים, עיצוב זקן">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">מאור אוחנה</a>
+      <button type="button" class="nav-toggle" aria-label="תפריט" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <ul class="nav-list">
+          <li><a href="#home">דף בית</a></li>
+          <li><a href="#about">אודות</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#services">שירותים</a></li>
+          <li><a href="#booking">הזמנת תור</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <h1 id="hero-title" class="hero-title">מאור אוחנה – עיצוב שיער ברמה אחרת</h1>
+        <p class="hero-subtitle">ספרות גברים מקצועית ברחובות. שירות אישי, אווירה יוקרתית ותוצאה שמדברת בעד עצמה.</p>
+        <div class="hero-cta">
+          <a href="#booking" class="btn btn-primary">קביעת תור</a>
+          <a href="tel:0504336050" class="btn btn-secondary">התקשר עכשיו</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">אודות</h2>
+        <div class="about-grid">
+          <div class="about-image-wrap">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="מאור אוחנה בעבודה" width="600" height="400" loading="lazy">
+          </div>
+          <div class="about-text">
+            <p class="about-lead">מאור אוחנה – ספר גברים מקצועי עם ניסיון רב בעיצוב שיער לגברים.</p>
+            <p>הסאלון ברחובות מציע שירות אישי ואווירה יוקרתית. ההתמחות בתספורות גברים, עיצוב זקן, פן והחלקות – כל זאת עם יחס חם ומקצועי ללקוח.</p>
+            <p>אנחנו מאמינים שכל תספורת צריכה להתאים לאופי, לסגנון ולפנים – ולכן כל טיפול מותאם אישית. מגיעים אלינו מלקוחות קבועים ועד חתנים לפני החתונה.</p>
+            <p>בואו להרגיש את ההבדל – ברחובות, יצחק מודעי 2.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="section-title">גלריה</h2>
+        <div class="gallery-grid">
+          <button type="button" class="gallery-item" data-index="0" aria-label="תמונה 1">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="עיצוב שיער גברים" width="600" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-index="1" aria-label="תמונה 2">
+            <img src="https://images.unsplash.com/photo-1521590832167-7abcbf20da19?w=600&q=80" alt="ספרות מקצועית" width="600" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-index="2" aria-label="תמונה 3">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0de3a?w=600&q=80" alt="תספורת איכותית" width="600" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-index="3" aria-label="תמונה 4">
+            <img src="https://images.unsplash.com/photo-1621605815971-2da2b7472345?w=600&q=80" alt="עיצוב זקן" width="600" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-index="4" aria-label="תמונה 5">
+            <img src="https://images.unsplash.com/photo-1605499466606-28bf6c2e2c2b?w=600&q=80" alt="סאלון יוקרתי" width="600" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-index="5" aria-label="תמונה 6">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80" alt="טיפול שיער" width="600" height="400" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="תצוגת תמונה" tabindex="-1" hidden>
+      <button type="button" class="lightbox-close" aria-label="סגור">×</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img">
+      </div>
+    </div>
+
+    <section class="section section-services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title" class="section-title">שירותים ומחירים</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">✂️</div>
+            <h3>תספורת גברים</h3>
+            <p>תספורת מקצועית המותאמת לפנים ולסגנון שלך. כולל שטיפה ועיצוב.</p>
+            <p class="service-price">מ־90 ₪</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🧔</div>
+            <h3>עיצוב זקן</h3>
+            <p>גילוח ועיצוב זקן מדויק עם כלים מקצועיים.</p>
+            <p class="service-price">מ־50 ₪</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">💇</div>
+            <h3>פן / החלקות</h3>
+            <p>טיפולי פן או החלקה לאירועים ולמראה מושלם.</p>
+            <p class="service-price">מ־120 ₪</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">💒</div>
+            <h3>חבילת חתן</h3>
+            <p>חבילה מלאה לחתן: תספורת, עיצוב זקן וטיפול. מושלם ליום הגדול.</p>
+            <p class="service-price">מ־250 ₪</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-booking" id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <h2 id="booking-title" class="section-title">הזמנת תור</h2>
+        <div class="booking-wrap">
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="form-group">
+              <label for="name">שם מלא</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="הכנס את שמך">
+            </div>
+            <div class="form-group">
+              <label for="phone">טלפון</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="050-0000000">
+            </div>
+            <div class="form-group">
+              <label for="date">תאריך מבוקש</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">שעה מבוקשת</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+              <label for="service">סוג שירות</label>
+              <select id="service" name="service" required>
+                <option value="">בחר שירות</option>
+                <option value="haircut">תספורת גברים</option>
+                <option value="beard">עיצוב זקן</option>
+                <option value="perm">פן / החלקות</option>
+                <option value="groom">חבילת חתן</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">שליחת בקשת תור</button>
+          </form>
+          <div class="booking-success" id="booking-success" hidden>
+            <div class="success-icon">✓</div>
+            <h3>התור נקלט בהצלחה!</h3>
+            <p>ניצור קשר בהקדם לאישור.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">צור קשר</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-item">
+              <strong>טלפון:</strong>
+              <a href="tel:0504336050">050-433-6050</a>
+            </p>
+            <p class="contact-item">
+              <strong>כתובת:</strong>
+              רחובות, יצחק מודעי 2, ישראל
+            </p>
+            <p class="contact-item">
+              <strong>שעות פעילות:</strong><br>
+              א'–ה' 09:00–20:00<br>
+              ו' 09:00–14:00
+            </p>
+            <a href="https://share.google/zYa9oxRrR1D11zZsq" class="btn btn-outline" target="_blank" rel="noopener noreferrer">דף העסק בגוגל</a>
+          </div>
+          <div class="contact-map">
+            <iframe
+              title="מיקום הסאלון – רחובות יצחק מודעי 2"
+              src="https://maps.google.com/maps?q=%D7%99%D7%A6%D7%97%D7%A7%20%D7%9E%D7%95%D7%93%D7%A2%D7%99%202%20%D7%A8%D7%97%D7%95%D7%95%D7%AA&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© מאור אוחנה – עיצוב שיער ברחובות. יצחק מודעי 2.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
